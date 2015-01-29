@@ -4,30 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 
-<script type="text/javascript">
-	function switchTo(sec_id) {
-		for(var i=1;i<=7;i++){
-			var f = document.getElementById('sectBt'+i);
-       			f.disabled = false;
-		}
-		if(sec_id!=0){
-       		for(var i=1;i<=7;i++){
-       			var e = document.getElementById('section'+i);
-       			e.style.display = 'none';
-      	 	}
-      	 	document.getElementById('section'+sec_id).style.display = 'block';
-       		document.getElementById('sectBt'+sec_id).disabled = true;
-      	 }
-      	 else{
-      	 	for(var i=1;i<=7;i++){
-       			var e = document.getElementById('section'+i);
-       			e.style.display = 'block';
-      	 	}
-      	 	document.getElementById('overallBt').disabled = true;
-      	 }
-       	
-   }
-</script>
+<script src="js/tqf3_form_js.js"></script>
 
 </head>
 
@@ -61,8 +38,12 @@
 <tr><td>
 <h3>1.รหัสวิชาและชื่อรายวิชา</h3>
 
-กรุณาเลือกรายวิชาโดยกดปุ่ม "ค้นหารายวิชา" <br/>
+กรุณาเลือกรายวิชาโดยกรอกรหัสวิชาบางส่วนจากนั้นกดปุ่ม "ค้นหารายวิชา" <br/>
+<input type="text" ><br/>
 <input type="button" value="ค้นหารายวิชา"><br/><br/>
+
+<div id="search1">
+</div>
 
 <h4>รหัสวิชา</h4>
 <input type="text" ><br/>
@@ -202,6 +183,10 @@
 </div>
 
 <div id="section7">
+</div>
+
+<div id="comfirmDiv">
+	<input type = "submit" value="บันทึกเข้าสู่ระบบ">
 </div>
 
 </form>
